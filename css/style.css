@@ -34,13 +34,14 @@ footer p {
     padding-bottom: .25em;    
 }
 #popUp {
-    background-color: rgba(196, 196, 196, .6);
+    background-color: rgba(196, 196, 196, .8);
     display: block;
-    width: 500px;
+    width: 800px;
+    min-height: 400px;
     margin: 0 auto;
     padding: 2em 1em;
     border-radius: 5px;
-    transform: translateY(100%);
+    transform: translateY(10%);
 }
 .category {
     display: block;
