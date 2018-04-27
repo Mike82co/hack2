@@ -5,7 +5,8 @@ var movieGenera
 var movieDirector
 var movieGenre
 var canvas = document.querySelector("main")
-
+var submitButton = document.querySelector("#submitButton")
+var userAnswer = document.querySelector("#answer")
 
 function getMovie(){
   fetch('http://www.omdbapi.com/?i='+randomMovie()+'&apikey=acace6ec')
@@ -28,15 +29,16 @@ function getMovie(){
 
     var questionBox =`
     <div id="popUp"> 
-        <span class="category" id="year">YEAR:   ${movieYear}</span>
-        <span class="category" id="director">DIRECTOR:  ${movieDirector}</span>
-        <span class="category" id="actors">ACTORS:  ${movieActor}</span>
-        <span class="category" id="genre">GENRE:  ${movieGenre}</span>
-        </div>`
+    <span class="category" id="year"><em>YEAR:</em>   ${movieYear}</span>
+    <span class="category" id="director"><em>DIRECTOR:</em>  ${movieDirector}</span>
+    <span class="category" id="actors"><em>ACTORS:</em>  ${movieActor}</span>
+    <span class="category" id="genre"><em>GENRE:</em>  ${movieGenre}</span>
+    </div>`
 
     console.log(movieYear)
     canvas.innerHTML += questionBox
     
+
 
   }
 }
