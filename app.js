@@ -3,8 +3,7 @@ var movieYear
 var movieActor
 var movieGenera
 var movieDirector
-
-
+var canvas = document.querySelector("main")
 
 function getMovie(){
   fetch('http://www.omdbapi.com/?i='+randomMovie()+'&apikey=acace6ec')
@@ -22,9 +21,11 @@ function getMovie(){
     movieTitle = passedData.Title 
     movieActor = passedData.Actors
     movieDirector = passedData.Director
-    movieYear = passedData.Yeary
-    
-    
+    movieYear = passedData.Year
+
+    console.log(movieTitle)
+    updateHTML()
+
   }
 }
 function randomMovie(){
@@ -32,5 +33,8 @@ function randomMovie(){
   var x = Math.floor((Math.random() * 10) + 1);
   
   return movieArr[x]
+  }
+  function updateHTML(){
+    canvas.innerHTML += questionBox
   }
 getMovie()

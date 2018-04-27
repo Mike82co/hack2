@@ -33,3 +33,6 @@ footer p {
     padding-top: .25em;
     padding-bottom: .25em;    
 }
+#popUp {
+    background-color: rgba(196, 196, 196, .6);
+}
