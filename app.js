@@ -3,7 +3,9 @@ var movieYear
 var movieActor
 var movieGenera
 var movieDirector
+var movieGenre
 var canvas = document.querySelector("main")
+
 
 function getMovie(){
   fetch('http://www.omdbapi.com/?i='+randomMovie()+'&apikey=acace6ec')
@@ -22,9 +24,19 @@ function getMovie(){
     movieActor = passedData.Actors
     movieDirector = passedData.Director
     movieYear = passedData.Year
+    movieGenre = passedData.Genre
 
-    console.log(movieTitle)
-    updateHTML()
+    var questionBox =`
+    <div id="popUp"> 
+        <span class="category" id="year">YEAR:   ${movieYear}</span>
+        <span class="category" id="director">DIRECTOR:  ${movieDirector}</span>
+        <span class="category" id="actors">ACTORS:  ${movieActor}</span>
+        <span class="category" id="genre">GENRE:  ${movieGenre}</span>
+        </div>`
+
+    console.log(movieYear)
+    canvas.innerHTML += questionBox
+    
 
   }
 }
@@ -34,7 +46,5 @@ function randomMovie(){
   
   return movieArr[x]
   }
-  function updateHTML(){
-    canvas.innerHTML += questionBox
-  }
+ 
 getMovie()
