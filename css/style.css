@@ -35,4 +35,16 @@ footer p {
 }
 #popUp {
     background-color: rgba(196, 196, 196, .6);
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    border-radius: 5px;
+    transform: translateY(100%);
+}
+.category {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
