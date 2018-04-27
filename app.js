@@ -1,12 +1,31 @@
 var movieTitle
-var movieYear
-var movieActor
-var movieGenera
-var movieDirector
-var movieGenre
+var moviePoster
+
 var canvas = document.querySelector("main")
 var submitButton = document.querySelector("#submitButton")
-var userAnswer = document.querySelector("#answer")
+
+submitButton.addEventListener('submit', checkAnswer)
+
+
+function checkAnswer(){
+
+event.preventDefault()
+console.log("clicked")
+
+  var userAnswer = document.querySelector("#answer").value
+  if (userAnswer == movieTitle)
+  {
+    canvas.innerHTML = `
+  <img src=${moviePoster}
+  `
+  }
+  else{
+    canvas.innerHTML = `
+  <img src= ./img/looser.jpg
+  `
+  }
+}
+
 
 function getMovie(){
   fetch('http://www.omdbapi.com/?i='+randomMovie()+'&apikey=acace6ec')
@@ -26,6 +45,7 @@ function getMovie(){
     movieDirector = passedData.Director
     movieYear = passedData.Year
     movieGenre = passedData.Genre
+    moviePoster = passedData.Poster
 
     var questionBox =`
     <div id="popUp"> 
@@ -35,12 +55,11 @@ function getMovie(){
     <span class="category" id="genre"><em>GENRE:</em>  ${movieGenre}</span>
     </div>`
 
-    console.log(movieYear)
     canvas.innerHTML += questionBox
     
+    
 
-
-  }
+    }
 }
 function randomMovie(){
   var movieArr = ["tt0120338","tt0076759","tt0096895","tt0110912","tt0054215","tt0077651","tt0110357","tt0114709","tt0088247","tt0093779","tt0126029"]
