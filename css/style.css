@@ -58,3 +58,19 @@ form {
 .category em{
    font-weight: bolder; 
 }
+
+/* About Us */
+
+.MikeL, .Baustin, .MattB, .Mark {
+    display: inline-block;
+    max-width: 23%;
+    vertical-align: top;
+    margin-right: 1em;
+}
+.Pictures {
+    max-width: 300px;
+}
+.Bio {
+    color: white;
+    margin-top: 1em;
+}
