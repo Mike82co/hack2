@@ -45,9 +45,16 @@ footer p {
   border-radius: 5px;
   transform: translateY(10%);
 }
+form {
+    text-align: center;
+}
 .category {
   display: block;
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.category em{
+   font-weight: bolder; 
 }
