@@ -1,51 +1,53 @@
 .navbar-brand {
-    max-width: 50px;
+  max-width: 50px;
 }
 header {
-    background: black;
-
+  background: black;
 }
 h1 {
-    font-family: 'Limelight', cursive;
-    font-size: 2em;
-    color: white;
-    margin-bottom: 0;
-    padding-top: 1em;
-    padding-bottom: 1em;
+  font-family: 'Limelight', cursive;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.Home main {
+  background-color: black;
+  background-image: url(../img/curtains.jpg);
+  min-height: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 main {
-    background-color: black;
-    background-image: url(../img/curtains.jpg);
-    min-height: 600px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
+  background-color: black;
 }
 footer {
-    background-image: url(../img/footer-bg.jpg);
-    background-repeat: repeat-x;
-    background-size: contain;
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 footer p {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: red;
-    padding-top: .25em;
-    padding-bottom: .25em;    
+  font-size: 2.5em;
+  font-weight: bold;
+  color: red;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 #popUp {
-    background-color: rgba(196, 196, 196, .8);
-    display: block;
-    width: 800px;
-    min-height: 400px;
-    margin: 0 auto;
-    padding: 2em 1em;
-    border-radius: 5px;
-    transform: translateY(10%);
+  background-color: rgba(196, 196, 196, 0.8);
+  display: block;
+  width: 800px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  border-radius: 5px;
+  transform: translateY(10%);
 }
 .category {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
