@@ -1,0 +1,1 @@
+Hello there I am mike and I hail from Aurora Colorado. Like most natives I am a lover of outdoor sports such as snowboarding. I was in the service industry for a very long time before making the decision to attend galvanize. 
